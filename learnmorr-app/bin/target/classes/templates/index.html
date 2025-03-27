@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>learnmorr</title>
+</head>
+<body>
+
+<div align="center">
+	<h1>Users</h1>
+	<table border="1">
+		<thead>
+			<tr>
+			<th>User FirstName</th>
+			<th>User LastName</th>
+			<th>User Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="users : ${listUsers}">
+				<td th:text="${users.firstName}"></td>
+				<td th:text="${users.lastName}"></td>
+				<td th:text="${users.email}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+
+</body>
+</html>
